@@ -114,5 +114,32 @@ Mocked endpoints are implemented in `src/api/handlers.ts`, including:
 
 - This app currently uses in-memory state (no backend persistence)
 - Workflow simulation and validation run in the client
-  <img width="1919" height="864" alt="Screenshot 2026-04-21 000801" src="https://github.com/user-attachments/assets/28dc9e78-0608-4586-9d73-fa5aa01c1914" />
 
+## 🖼️ Workflow Canvas Overview
+
+This diagram illustrates a configurable **HR workflow designed using a visual node-based interface**. The system enables users to create, connect, and manage different stages of a process in an intuitive manner.
+
+### 🔄 Workflow Structure
+
+The workflow is composed of multiple node types representing different stages:
+
+- **Start Node**: Marks the entry point of the workflow  
+- **Task Node**: Represents human actions that require input or execution  
+- **Approval Node**: Handles decision-making steps based on roles or conditions  
+- **Automated Node**: Executes system-driven actions triggered within the workflow  
+- **End Node**: Indicates the completion of the workflow  
+
+Each node is connected through directed edges, defining the sequence and flow of execution.
+
+ <img width="1919" height="864" alt="Screenshot 2026-04-21 000801" src="https://github.com/user-attachments/assets/28dc9e78-0608-4586-9d73-fa5aa01c1914" />
+
+### ⚙️ Key Capabilities
+
+- Visual drag-and-drop workflow creation  
+- Configurable nodes with editable properties  
+- Support for human tasks, approvals, and automated actions  
+- Dynamic workflow structure using connected nodes  
+- Simulation-ready design for testing execution flow  
+
+This approach enables flexible design and management of HR processes, making it easier to model and understand complex workflows.
+  
