@@ -56,20 +56,20 @@ The application follows a modular, layer-based frontend architecture with clear 
 
 ```text
 src/
-  api/                # API client, mock data, handlers, shared types
-  components/
-    canvas/           # Canvas, toolbar, node palette
-    nodes/            # Custom node UI components
-    forms/            # Node configuration forms
-    sandbox/          # Simulation + execution log panel
-  hooks/              # Workflow, form, and simulation hooks
-  mocks/              # MSW browser setup
-  store/              # Zustand workflow store
-  types/              # Workflow domain types
-  utils/              # Graph validation and serialization helpers
+├── api/ # API client, mock data, handlers, shared types
+├── components/
+│ ├── canvas/ # Canvas, toolbar, node palette
+│ ├── nodes/ # Custom node UI components
+│ ├── forms/ # Node configuration forms
+│ └── sandbox/ # Simulation + execution log panel
+├── hooks/ # Workflow, form, and simulation hooks
+├── mocks/ # MSW browser setup
+├── store/ # Zustand workflow store
+├── types/ # Workflow domain types
+└── utils/ # Graph validation and serialization helpers
 ```
 
-## Getting Started
+## ⚙️ How to Run
 
 ### Prerequisites
 
