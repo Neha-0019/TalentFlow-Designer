@@ -1,0 +1,8 @@
+import type { ApprovalNodeData, WorkflowNodeData } from '../../types/workflow';
+
+interface Props { data: WorkflowNodeData; onChange: (d: Partial<WorkflowNodeData>) => void; }
+
+export default function ApprovalNodeForm({ data, onChange }: Props) {
+  const d = data as ApprovalNodeData;
+  return <div className="space-y-4"><div><label className="block text-xs font-medium text-gray-500 mb-1">Title *</label><input className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400" value={d.title} onChange={(e) => onChange({ title: e.target.value })} placeholder="Approval step title" /></div><div><label className="block text-xs font-medium text-gray-500 mb-1">Approver role *</label><select className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400" value={d.approverRole} onChange={(e) => onChange({ approverRole: e.target.value as ApprovalNodeData['approverRole'] })}><option value="Manager">Manager</option><option value="HRBP">HRBP</option><option value="Director">Director</option></select></div><div><label className="block text-xs font-medium text-gray-500 mb-1">Auto-approve threshold</label><input type="number" className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400" value={d.autoApproveThreshold ?? ''} placeholder="e.g. 5 (days)" onChange={(e) => onChange({ autoApproveThreshold: e.target.value ? Number(e.target.value) : null })} /><p className="text-xs text-gray-400 mt-1">Auto-approve after this many days if no action.</p></div></div>;
+}
