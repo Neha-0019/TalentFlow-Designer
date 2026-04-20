@@ -114,3 +114,5 @@ Mocked endpoints are implemented in `src/api/handlers.ts`, including:
 
 - This app currently uses in-memory state (no backend persistence)
 - Workflow simulation and validation run in the client
+  <img width="1919" height="864" alt="Screenshot 2026-04-21 000801" src="https://github.com/user-attachments/assets/28dc9e78-0608-4586-9d73-fa5aa01c1914" />
+
